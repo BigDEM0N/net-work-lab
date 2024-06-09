@@ -64,4 +64,6 @@ CMakeFiles/icmp_test.dir/src/ethernet.c.o: \
  /home/ubuntu/net-lab/./include/buf.h \
  /home/ubuntu/net-lab/./include/utils.h \
  /home/ubuntu/net-lab/./include/driver.h \
- /home/ubuntu/net-lab/./include/arp.h /home/ubuntu/net-lab/./include/ip.h
+ /home/ubuntu/net-lab/./include/arp.h /home/ubuntu/net-lab/./include/ip.h \
+ /home/ubuntu/net-lab/./include/config.h \
+ /home/ubuntu/net-lab/./include/net.h

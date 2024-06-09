@@ -5,6 +5,8 @@
         "string_view": "c",
         "ethernet.h": "c",
         "utils.h": "c",
-        "config.h": "c"
+        "config.h": "c",
+        "ip.h": "c",
+        "net.h": "c"
     }
 }
