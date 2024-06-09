@@ -216,7 +216,9 @@ CMakeFiles/arp_test.dir/src/ethernet.c.o: ../src/ethernet.c \
   ../include/utils.h \
   ../include/driver.h \
   ../include/arp.h \
-  ../include/ip.h
+  ../include/ip.h \
+  ../include/config.h \
+  ../include/net.h
 
 CMakeFiles/arp_test.dir/src/map.c.o: ../src/map.c \
   /usr/include/stdc-predef.h \

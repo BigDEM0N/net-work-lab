@@ -141,7 +141,9 @@ CMakeFiles/ip_frag_test.dir/src/ethernet.c.o: ../src/ethernet.c \
   ../include/utils.h \
   ../include/driver.h \
   ../include/arp.h \
-  ../include/ip.h
+  ../include/ip.h \
+  ../include/config.h \
+  ../include/net.h
 
 CMakeFiles/ip_frag_test.dir/src/ip.c.o: ../src/ip.c \
   /usr/include/stdc-predef.h \
