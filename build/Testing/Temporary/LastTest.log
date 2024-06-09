@@ -1,0 +1,22 @@
+Start testing: Jun 09 16:09 CST
+----------------------------------------------------------
+5/6 Testing: ip_frag_test
+5/6 Test: ip_frag_test
+Command: "/home/ubuntu/net-lab/build/ip_frag_test" "/home/ubuntu/net-lab/testing/data/ip_frag_test"
+Directory: /home/ubuntu/net-lab/build
+"ip_frag_test" start time: Jun 09 16:09 CST
+Output:
+----------------------------------------------------------
+[0;34mFeeding input.
+[0;34mComparing logs.
+[1;32mLog file check passed
+[0m
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ip_frag_test" end time: Jun 09 16:09 CST
+"ip_frag_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 09 16:09 CST

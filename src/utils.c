@@ -3,7 +3,7 @@
 #include <string.h>
 /**
  * @brief ip转字符串
- * 
+ *
  * @param ip ip地址
  * @return char* 生成的字符串
  */
@@ -16,7 +16,7 @@ char *iptos(uint8_t *ip)
 
 /**
  * @brief mac转字符串
- * 
+ *
  * @param mac mac地址
  * @return char* 生成的字符串
  */
@@ -29,7 +29,7 @@ char *mactos(uint8_t *mac)
 
 /**
  * @brief 时间戳转字符串
- * 
+ *
  * @param timestamp 时间戳
  * @return char* 生成的字符串
  */
@@ -43,7 +43,7 @@ char *timetos(time_t timestamp)
 
 /**
  * @brief ip前缀匹配
- * 
+ *
  * @param ipa 第一个ip
  * @param ipb 第二个ip
  * @return uint8_t 两个ip相同的前缀长度
@@ -67,7 +67,7 @@ uint8_t ip_prefix_match(uint8_t *ipa, uint8_t *ipb)
 
 /**
  * @brief 计算16位校验和
- * 
+ *
  * @param buf 要计算的数据包
  * @param len 要计算的长度
  * @return uint16_t 校验和
@@ -75,4 +75,33 @@ uint8_t ip_prefix_match(uint8_t *ipa, uint8_t *ipb)
 uint16_t checksum16(uint16_t *data, size_t len)
 {
     // TO-DO
+    uint32_t sum = 0;
+
+    // 处理主体
+    while (len > 1)
+    {
+        sum += *data++;
+        len -= 2;
+        // 处理进位情况
+        while (sum >> 16)
+        {
+            sum = (sum >> 16) + (sum & 0xFFFF);
+        }
+    }
+
+    // 处理剩余部分
+    if (len)
+    {
+        sum += *(uint8_t *)data;
+    }
+
+    // 处理最后的进位情况
+    while (sum >> 16)
+    {
+        sum = (sum >> 16) + (sum & 0xFFFF);
+    }
+
+    sum = (uint16_t)sum;
+    sum = ~sum;
+    return (uint16_t)sum;
 }
