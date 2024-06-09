@@ -10,7 +10,7 @@
  */
 static void icmp_resp(buf_t *req_buf, uint8_t *src_ip)
 {
-    // todo
+    // TO-DO
     // 初始化
     buf_init(&txbuf, req_buf->len);
     memcpy(txbuf.data, req_buf->data, req_buf->len);
@@ -40,7 +40,7 @@ static void icmp_resp(buf_t *req_buf, uint8_t *src_ip)
  */
 void icmp_in(buf_t *buf, uint8_t *src_ip)
 {
-    // todo
+    // TO-DO
     //  报头检测
     if (buf->len < sizeof(icmp_hdr_t))
         return;
@@ -59,7 +59,7 @@ void icmp_in(buf_t *buf, uint8_t *src_ip)
  */
 void icmp_unreachable(buf_t *recv_buf, uint8_t *src_ip, icmp_code_t code)
 {
-    // todo
+    // TO-DO
     //  结构 icmp_hdr + ip_hdr + data(8 bytes)
     buf_init(&txbuf, sizeof(ip_hdr_t) + 8);
     memcpy(txbuf.data, recv_buf->data, sizeof(ip_hdr_t) + 8);
