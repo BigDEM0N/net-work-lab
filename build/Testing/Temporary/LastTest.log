@@ -1,10 +1,10 @@
-Start testing: Jun 09 16:19 CST
+Start testing: Jun 09 19:31 CST
 ----------------------------------------------------------
-6/6 Testing: icmp_test
-6/6 Test: icmp_test
-Command: "/home/ubuntu/net-lab/build/icmp_test" "/home/ubuntu/net-lab/testing/data/icmp_test"
+4/6 Testing: ip_test
+4/6 Test: ip_test
+Command: "/home/ubuntu/net-lab/build/ip_test" "/home/ubuntu/net-lab/testing/data/ip_test"
 Directory: /home/ubuntu/net-lab/build
-"icmp_test" start time: Jun 09 16:19 CST
+"ip_test" start time: Jun 09 19:31 CST
 Output:
 ----------------------------------------------------------
 [0;34mTest begin.
@@ -37,10 +37,6 @@ Sample input all processed, checking output
 [0;32mPacket 7: no differences
 [0;32mPacket 8: no differences
 [0;32mPacket 9: no differences
-[0;32mPacket 10: no differences
-[0;32mPacket 11: no differences
-[0;32mPacket 12: no differences
-[0;32mPacket 13: no differences
 [1;32m====> All packets are the same to the demo.
 [0m[1;33mFor this test, log is only a reference. Your implementation is OK if your pcap file is the same to the demo pcap file.
 [0m
@@ -48,8 +44,8 @@ Sample input all processed, checking output
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"icmp_test" end time: Jun 09 16:19 CST
-"icmp_test" time elapsed: 00:00:00
+"ip_test" end time: Jun 09 19:31 CST
+"ip_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jun 09 16:19 CST
+End testing: Jun 09 19:31 CST
